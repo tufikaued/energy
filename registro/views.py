@@ -6,7 +6,4 @@ from .models import RegistroEnergia
 class IndexView(ListView):
     context_object_name = 'registros_energia'
     queryset = RegistroEnergia.objects.all()
-    print('**********************************************')
-    print(queryset)
-    print('**********************************************')
     template_name = 'registro/index.html'

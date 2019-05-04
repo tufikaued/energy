@@ -19,7 +19,7 @@
         <tbody>
             {% for energia in registros_energia %}
             <tr>
-                <td>{{ energia.created_at|date:"Ymd-His" }}</td>
+                <td>{{ energia.created_at|date:"Ymd-H:i:s" }}</td>
                 <td>{{ energia.consumo_kwatts }}</td>
                 <td>{{ energia.generado_kwatts }}</td>
             </tr>
